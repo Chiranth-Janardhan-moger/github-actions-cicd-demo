@@ -1,0 +1,28 @@
+name: Issue Greeter Bot
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  reply:
+    name: Auto Reply to Issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post welcome comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const author = context.payload.issue.user.login;
+            const commentBody = `Hello @${author}, thank you for creating this issue! A maintainer has been notified and will review it soon.`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: commentBody
+            });

@@ -1,0 +1,27 @@
+{
+  "name": "github-actions-cicd-demo",
+  "version": "1.0.0",
+  "description": "Interactive CI/CD demonstration with GitHub Actions, testing, code quality, dependency management, and issue automation",
+  "main": "src/calculator.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint src/ tests/",
+    "audit": "npm audit --audit-level=high"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chiranth-Janardhan-moger/github-actions-cicd-demo.git"
+  },
+  "keywords": [
+    "github-actions",
+    "cicd",
+    "continuous-integration",
+    "continuous-deployment",
+    "tutorial"
+  ],
+  "author": "Chiranth Janardhan Moger",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
