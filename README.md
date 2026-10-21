@@ -1,5 +1,8 @@
 # CI/CD with GitHub Actions
 
+[![CI/CD Pipeline](https://github.com/Chiranth-Janardhan-moger/github-actions-cicd-demo/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Chiranth-Janardhan-moger/github-actions-cicd-demo/actions/workflows/ci-cd.yml)
+[![Issue Greeter Bot](https://github.com/Chiranth-Janardhan-moger/github-actions-cicd-demo/actions/workflows/issue-greeter.yml/badge.svg)](https://github.com/Chiranth-Janardhan-moger/github-actions-cicd-demo/actions/workflows/issue-greeter.yml)
+
 An end-to-end practical demonstration of Continuous Integration, Continuous Delivery, automated code quality checks, dependency vulnerability scanning, and repository bot automation built with GitHub Actions.
 
 ---
