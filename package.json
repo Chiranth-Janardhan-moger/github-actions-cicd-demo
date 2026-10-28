@@ -22,6 +22,6 @@
   "author": "Chiranth Janardhan Moger",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.13.0"
   }
 }
